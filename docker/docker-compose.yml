@@ -1,0 +1,9 @@
+simulador_pedidos_container:
+  container_name: api-v1
+  ports:
+    - "1337:1337"
+  command: "sails lift"
+  volumes:
+      - "../:/server"
+      - "/usr/lib/"
+  build: ./api
